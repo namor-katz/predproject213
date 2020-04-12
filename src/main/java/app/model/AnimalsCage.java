@@ -11,6 +11,8 @@ public class AnimalsCage {
 
     @Autowired
     private Dog animal;
+
+    @Autowired
     private Timer timer;
 
     public void whatAnimalSay() {
@@ -19,6 +21,6 @@ public class AnimalsCage {
         System.out.println("At:");
         System.out.println(new Timer().getTime());
         System.out.println("________________________");
-//        System.out.println(timer.getTime() + " я тимер!");
+        System.out.println(timer.getTime() + " я тимер!");
     }
 }
