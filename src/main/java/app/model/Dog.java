@@ -1,12 +1,10 @@
 package app.model;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-
+@Primary
 @Component(value = "dog")
-//@Bean(name="dog")
 public class Dog extends Animal {
     @Override
     public String toString() {
